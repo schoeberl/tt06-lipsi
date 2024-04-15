@@ -40,6 +40,12 @@ class Decoder extends Module {
     is(9.U) {
       segments := "b1100111".U
     }
+    is (10.U) { segments := "b1110111".U }
+    is (11.U) { segments := "b1111100".U }
+    is (12.U) { segments := "b0111001".U }
+    is (13.U) { segments := "b1011110".U }
+    is (14.U) { segments := "b1111001".U }
+    is (15.U) { segments := "b1110001".U }
   }
 }
 /**
@@ -63,7 +69,7 @@ class ChiselTop() extends Module {
   val add = WireDefault(0.U(7.W))
   add := io.ui_in + io.uio_in
 
-  val lipsi = Module(new Lipsi("lipsi/asm/blink.asm"))
+  val lipsi = Module(new Lipsi("lipsi/asm/blink.asm", memSize = 4))
   lipsi.io.din := add
 
   // Blink with 1 Hzq

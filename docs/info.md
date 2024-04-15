@@ -9,12 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This is the Lipsi processor. It executes  a hardcoded program that reads a value from the input and writes it to the output.
+This is the Lipsi processor. It executes  a hardcoded program 
+counts up at a readable frequency. That number is displayed on
+the 7-segment display. Additionally, the DP blinks (in hhardware).
 
 ## How to test
 
-Currently, we use cocotb, this shall change to ChiselTest
+ChiselTest is used for waveform generation.
+Currently, we use cocotb, this shall change to ChiselTest.
+But that test is disabled
 
 ## External hardware
 
-non by default
+non by default.
