@@ -1,5 +1,7 @@
 import chisel3._
 
+import lipsi._
+
 /**
  * Example design in Chisel.
  * A redesign of the Tiny Tapeout example.
@@ -21,6 +23,9 @@ class ChiselTop() extends Module {
   val add = WireDefault(0.U(7.W))
   add := io.ui_in + io.uio_in
 
+  val lipsi = Module(new LipsiTop("lipsi/asm/test.asm"))
+  lipsi.io.din := add
+
   // Blink with 1 Hzq
   val cntReg = RegInit(0.U(32.W))
   val ledReg = RegInit(0.U(1.W))
@@ -29,7 +34,7 @@ class ChiselTop() extends Module {
     cntReg := 0.U
     ledReg := ~ledReg
   }
-  io.uo_out := ledReg ## add
+  io.uo_out := ledReg ## lipsi.io.dout(6, 0)
 }
 
 object ChiselTop extends App {
