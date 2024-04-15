@@ -1,0 +1,3 @@
+[submodule "lipsi"]
+	path = lipsi
+	url = git@github.com:schoeberl/lipsi.git
