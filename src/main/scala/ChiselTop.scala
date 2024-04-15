@@ -23,7 +23,7 @@ class ChiselTop() extends Module {
   val add = WireDefault(0.U(7.W))
   add := io.ui_in + io.uio_in
 
-  val lipsi = Module(new LipsiTop("lipsi/asm/test.asm"))
+  val lipsi = Module(new LipsiTop("lipsi/asm/blink.asm"))
   lipsi.io.din := add
 
   // Blink with 1 Hzq
