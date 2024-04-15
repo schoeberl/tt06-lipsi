@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       - name: Install iverilog
         shell: bash
@@ -27,7 +29,7 @@ jobs:
           distribution: 'temurin'
           cache: 'sbt'
       - name: generate Verilog
-        run: sbt run
+        run: sbt "runMain ChiselTop"
 
       - name: run Chisel tests
         run: sbt test

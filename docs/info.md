@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This is a Chisel template
+This is the Lipsi processor. It executes  a hardcoded program that reads a value from the input and writes it to the output.
 
 ## How to test
 
-Currently we use cocotb, this shall change to ChiselTest
+Currently, we use cocotb, this shall change to ChiselTest
 
 ## External hardware
 

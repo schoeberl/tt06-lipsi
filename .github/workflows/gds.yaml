@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin'
           cache: 'sbt'
       - name: generate Verilog
-        run: sbt run
+        run: sbt "runMain ChiselTop"
       - name: Build GDS
         uses: TinyTapeout/tt-gds-action@tt06
   

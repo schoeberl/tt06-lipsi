@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "Chisel Template - please change"      # Project title
-  author:       "Martin Schoeberl - please change"      # Your name
+  title:        "Lipsi: Probably the Smallest Processor in the World"      # Project title
+  author:       "Martin Schoeberl"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A Chisel Template for a Tiny Tapeout design. Change to your design."      # One line description of what your project does
+  description:  "A tiny 8-bit accumulator based microprocssor."      # One line description of what your project does
   language:     "Chisel" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -17,7 +17,7 @@ project:
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line.
   # For Chisel designs this is easy, as there is only one Verilg file to list, which contains all the Chisel generated Verilog.
   source_files:        
-    - "tt_um_chisel_template.v"
+    - "tt_um_lipsi_schoeberl.v"
     - "ChiselTop.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.

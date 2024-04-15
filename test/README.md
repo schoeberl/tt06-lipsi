@@ -14,7 +14,7 @@ To run the RTL simulation:
 First generate the Chisel Verilog output by running in the project root:
 
 ```sh
-sbt run
+ sbt "runMain ChiselTop"
 ```
 
 ```sh
