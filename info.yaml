@@ -23,7 +23,7 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "input for Lipsi"
+  ui[0]: "input for Lipsi, also switch of blinking LED"
   ui[1]: "input for Lipsi"
   ui[2]: "input for Lipsi"
   ui[3]: "input for Lipsi"
