@@ -17,5 +17,4 @@ Note that this project includes a submodule. Therefore, you need to update with:
 git submodule init
 git submodule update
 ```
-
 See a rendering of the actual [GDS II](https://schoeberl.github.io/tt06-lipsi/) file.
